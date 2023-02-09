@@ -1,0 +1,5 @@
+#!/bin/bash
+./grfd.sh
+./buildbusybox.sh
+./installglibc
+mksquashfs rootfs rootfs.sfs -comp xz
