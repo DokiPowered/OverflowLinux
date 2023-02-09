@@ -1,3 +1,4 @@
 busybox/
 !busybox/.config
 rootfs/*
+!rootfs/.keep
