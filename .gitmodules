@@ -1,3 +1,6 @@
 [submodule "bee"]
 	path = bee
 	url = https://github.com/DokiPowered/BusyBox-ETC-Example.git
+[submodule "BusyBox"]
+	path = busybox
+	url = https://github.com/ypo-GitHub/busybox.git
