@@ -4,3 +4,6 @@
 [submodule "BusyBox"]
 	path = busybox
 	url = https://github.com/ypo-GitHub/busybox.git
+[submodule "opm"]
+	path = opm
+	url = https://github.com/DokiPowered/opm.git
