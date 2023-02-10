@@ -2,4 +2,5 @@
 ./grfd.sh
 ./buildbusybox.sh
 ./installglibc
+./installopm
 mksquashfs rootfs rootfs.sfs -comp xz
