@@ -1,0 +1,12 @@
+#!/bin/bash
+wget https://slackware.uk/slackware/slackware64-current/slackware64/l/gmp-6.2.1-x86_64-3.txz
+sudo tar -xf gmp-6.2.1-x86_64-3.txz -C rootfs
+( cd rootfs/usr/lib64 ; rm -rf libgmp.so )
+( cd rootfs/usr/lib64 ; ln -sf libgmp.so.10.4.1 libgmp.so )
+( cd rootfs/usr/lib64 ; rm -rf libgmp.so.10 )
+( cd rootfs/usr/lib64 ; ln -sf libgmp.so.10.4.1 libgmp.so.10 )
+( cd rootfs/usr/lib64 ; rm -rf libgmpxx.so )
+( cd rootfs/usr/lib64 ; ln -sf libgmpxx.so.4.6.1 libgmpxx.so )
+( cd rootfs/usr/lib64 ; rm -rf libgmpxx.so.4 )
+( cd rootfs/usr/lib64 ; ln -sf libgmpxx.so.4.6.1 libgmpxx.so.4 )
+rm gmp-6.2.1-x86_64-3.txz
