@@ -1,0 +1,23 @@
+#!/bin/bash
+wget https://slackware.uk/slackware/slackware64-current/slackware64/l/gc-8.2.2-x86_64-1.txz
+sudo tar -xf gc-8.2.2-x86_64-1.txz -C rootfs
+(
+    cd rootfs/usr/lib64
+    rm -rf libcord.so
+    ln -sf libcord.so.1.5.0 libcord.so
+    rm -rf libcord.so.1
+    ln -sf libcord.so.1.5.0 libcord.so.1
+    rm -rf libgc.so
+    ln -sf libgc.so.1.5.1 libgc.so
+    rm -rf libgc.so.1
+    ln -sf libgc.so.1.5.1 libgc.so.1
+    rm -rf libgccpp.so 
+    ln -sf libgccpp.so.1.5.0 libgccpp.so
+    rm -rf libgccpp.so.1
+    ln -sf libgccpp.so.1.5.0 libgccpp.so.1
+    rm -rf libgctba.so
+    ln -sf libgctba.so.1.5.0 libgctba.so
+    rm -rf libgctba.so.1
+    ln -sf libgctba.so.1.5.0 libgctba.so.1
+)
+rm gc-8.2.2-x86_64-1.txz

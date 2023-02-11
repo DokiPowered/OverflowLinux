@@ -4,6 +4,7 @@
 ./buildbusybox.sh
 ./installglibc
 ./installguile
+./installgc
 ./installmake
 ./installopm
 rm rootfs.sfs
