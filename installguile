@@ -1,4 +1,5 @@
 #!/bin/bash
 wget https://slackware.uk/slackware/slackware64-current/slackware64/d/guile-3.0.9-x86_64-1.txz
 sudo tar -xf guile-3.0.9-x86_64-1.txz -C rootfs
+ln -sf libguile-3.0.so.1.6.0 rootfs/usr/lib64/libguile-3.0.so.1
 rm guile-3.0.9-x86_64-1.txz
