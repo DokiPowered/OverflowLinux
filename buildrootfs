@@ -6,6 +6,7 @@
 ./installguile
 ./installgc
 ./installlibffi
+./installlibunistring
 ./installmake
 ./installopm
 rm rootfs.sfs

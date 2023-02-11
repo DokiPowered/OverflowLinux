@@ -1,0 +1,8 @@
+#!/bin/bash
+wget 	https://slackware.uk/slackware/slackware64-current/slackware64/l/libunistring-1.1-x86_64-1.txz
+sudo tar -xf libunistring-1.1-x86_64-1.txz -C rootfs
+( cd rootfs/usr/lib64 ; rm -rf libunistring.so )
+( cd rootfs/usr/lib64 ; ln -sf libunistring.so.5.0.0 libunistring.so )
+( cd rootfs/usr/lib64 ; rm -rf libunistring.so.5 )
+( cd rootfs/usr/lib64 ; ln -sf libunistring.so.5.0.0 libunistring.so.5 )
+rm libunistring-1.1-x86_64-1.txz
