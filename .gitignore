@@ -3,3 +3,4 @@ busybox/
 rootfs/*
 !rootfs/.keep
 *.sfs
+*.gz
