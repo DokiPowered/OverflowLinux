@@ -5,6 +5,7 @@
 ./installglibc
 ./installguile
 ./installgc
+./installlibffi
 ./installmake
 ./installopm
 rm rootfs.sfs

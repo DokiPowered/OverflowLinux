@@ -1,0 +1,11 @@
+#!/bin/bash
+wget https://slackware.uk/slackware/slackware64-current/slackware64/l/libffi-3.4.4-x86_64-1.txz
+sudo tar -xf libffi-3.4.4-x86_64-1.txz -C rootfs
+(
+    cd rootfs/usr/lib64
+    rm -rf libffi.so 
+    ln -sf libffi.so.8.1.2 libffi.so 
+    rm -rf libffi.so.8 
+    ln -sf libffi.so.8.1.2 libffi.so.8
+)
+rm libffi-3.4.4-x86_64-1.txz
