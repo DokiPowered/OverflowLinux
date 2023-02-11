@@ -1,0 +1,6 @@
+#!/bin/bash
+cd rootfs
+wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/libxcrypt-4.1.1-6.el8.x86_64.rpm
+sudo chroot ./ /bin/rpm -i libxcrypt-4.1.1-6.el8.x86_64.rpm
+rm libxcrypt-4.1.1-6.el8.x86_64.rpm
+cd ..

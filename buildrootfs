@@ -8,6 +8,7 @@
 ./installlibffi
 ./installlibunistring
 ./installlibgmp
+./installlibcrypt
 ./installmake
 ./installopm
 rm rootfs.sfs
