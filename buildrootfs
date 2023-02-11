@@ -12,4 +12,3 @@
 ./installmake
 ./installopm
 rm rootfs.sfs
-mksquashfs rootfs rootfs.sfs -comp xz
